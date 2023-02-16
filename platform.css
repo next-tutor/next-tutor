@@ -1,0 +1,131 @@
+.home .text-container {
+  padding-left: 10px;
+}
+
+.home .image-container {
+  margin: 10px -30px 0 0;
+}
+
+.home .image-container img {
+  width: 535px;
+}
+
+.solutions {
+  background: #282828;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solutions .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  max-width: 850px;
+  margin-bottom: 95px;
+}
+
+.solutions .header h1 {
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  color: #cacaca;
+  margin-top: 17px;
+}
+
+.solutions .header h3 {
+  color: #bcbcbc;
+  font-size: 18px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.solutions .container {
+  display: flex;
+  width: 1200px;
+  margin-bottom: 150px;
+  margin-left: 50px;
+}
+
+.solutions .content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 60px;
+}
+
+.solutions .content .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.solutions .content .item:last-child {
+  margin-bottom: 0;
+}
+
+.solutions .content .item h3 {
+  color: #ffc064;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.solutions .content .item h2 {
+  color: white;
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 33px;
+}
+
+.solutions .content .item .txt {
+  font-size: 17px;
+  line-height: 38px;
+  color: #c1c1c1;
+  max-width: 500px;
+}
+
+.solutions .images {
+  padding-top: 55px;
+  position: relative;
+}
+
+.solutions .images .holder {
+  border-radius: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  /* top: 0; calc(40vh - 25%); */
+  display: flex;
+  width: 410px;
+  height: 430px;
+}
+
+.solutions .images img {
+  position: absolute;
+  width: 410px;
+  opacity: 0;
+  transition: opacity .8s linear;
+}
+
+.solutions .images img.active {
+  transition: opacity .8s ease;
+  opacity: 1;
+}
+
+
+.solutions .icon-wrap {
+  position: absolute;
+  top: -45px;
+  right: 204px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #616161;
+}
