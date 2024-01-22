@@ -1,4 +1,5 @@
 @import "navbar.css";
+@import "footer.css";
 
 :root {
   color-scheme: dark;
@@ -531,86 +532,6 @@ a:hover {
         margin-top: 2px;
         margin-right: -40px;
       }
-    }
-  }
-}
-
-footer {
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  width: 100%;
-  height: 517px;
-  border-top: 1px solid #c7d6fe21;
-  background: #000;
-  padding: 145px 0 0 344px;
-  .line {
-    position: absolute;
-    width: 768px;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      #00000000 0%,
-      #ffffff00 0%,
-      #8f8f8fab 50%,
-      #00000000 100%
-    );
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .left-side {
-    display: flex;
-    flex-direction: column;
-    .address {
-      color: #eff5ffb0;
-      font-family: Poppins;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 16px;
-    }
-    .icons {
-      padding-top: 30px;
-      a {
-        margin-right: 6px;
-        color: transparent !important;
-      }
-    }
-  }
-
-  .get-app-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
-    .btn {
-      margin-top: 20px;
-      transition: 0.3s ease-in-out;
-      &:hover {
-        scale: 1.04;
-      }
-    }
-  }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-    margin-left: 106px;
-    .title {
-      color: #fcfdfff0;
-      font-family: Poppins;
-      font-size: 13px;
-      font-weight: 400;
-      margin-bottom: 28px;
-    }
-    a {
-      color: #eff5ff84;
-      font-family: Poppins;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      text-decoration: none;
-      margin-bottom: 23px;
     }
   }
 }
