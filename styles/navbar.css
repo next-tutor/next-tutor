@@ -181,6 +181,16 @@ nav {
   }
 }
 
+@media (max-width: 425px) {
+  nav {
+    width: 80%;
+    padding: 0 23px;
+    .header a img {
+      scale: 0.9;
+    }
+  }
+}
+
 @media (max-width: 750px) {
   nav {
     .hamburger {
