@@ -2,6 +2,7 @@
 @import "footer.css";
 @import "homepage.css";
 @import "second-page.css";
+@import "third-page.css";
 
 :root {
   color-scheme: dark;
@@ -50,74 +51,6 @@ a:hover {
 .visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
-}
-
-.third-page {
-  width: 100%;
-  padding-block: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  section {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 50px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    transition: 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(40px);
-    span {
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      width: 470px;
-      .title {
-        font-family: Poppins;
-        font-size: 34px;
-        font-weight: 400;
-        letter-spacing: -1px;
-        .gradient {
-          font-weight: 400;
-          background: linear-gradient(135deg, #ffe7e4 0%, #ff6a07f5 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-      }
-      .subtitle {
-        padding-top: 25px;
-        color: #eff5ffb3;
-        font-family: Poppins;
-        font-size: 19px;
-        font-weight: 400;
-        line-height: 38px;
-      }
-    }
-    img {
-      scale: 0.8;
-    }
-
-    &:nth-of-type(2) {
-      img {
-        margin-left: -100px;
-      }
-      span {
-        margin-left: auto;
-        margin-right: -40px;
-      }
-    }
-    &:first-of-type,
-    &:last-of-type {
-      img {
-        position: absolute;
-        right: -100px;
-        top: -88px;
-      }
-    }
-  }
 }
 
 .recommendations {

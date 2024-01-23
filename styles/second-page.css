@@ -90,9 +90,6 @@
           max-lines: 1;
           min-width: 216px;
           text-align: center;
-          &:first-of-type {
-            /* margin-left: 50px; */
-          }
 
           &.selected {
             color: #329af0;
