@@ -1,6 +1,7 @@
 @import "navbar.css";
 @import "footer.css";
 @import "homepage.css";
+@import "second-page.css";
 
 :root {
   color-scheme: dark;
@@ -49,110 +50,6 @@ a:hover {
 .visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
-}
-
-.second-page {
-  padding-top: 30px;
-  padding-bottom: 90px;
-  width: 100%;
-  background: #070707;
-  display: flex;
-  justify-content: center;
-  .app {
-    position: relative;
-    margin-top: 40px;
-    width: 85%;
-    height: 700px;
-    border: 1px solid #313131;
-    border-radius: 25px;
-    flex-direction: column;
-    .header {
-      height: 64px;
-      width: 100%;
-      border-bottom: 1px solid #313131;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .titleBar {
-        padding-left: 30px;
-        display: flex;
-        gap: 9px;
-        .btn {
-          height: 15px;
-          width: 15px;
-          background: #efb842;
-          border-radius: 50%;
-          &:first-of-type {
-            background-color: #f25a5f;
-          }
-          &:last-of-type {
-            background-color: #1eb26d;
-          }
-        }
-      }
-      .responsive-menu {
-        margin-right: 25px;
-        width: 95px;
-        height: 43px;
-        border-radius: 7px;
-        border: 1px solid #313131;
-        display: flex;
-        cursor: pointer;
-        overflow: hidden;
-        div {
-          flex: 1;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          svg {
-            transition: 0.2s ease-in-out;
-            stroke: #525559;
-          }
-          &:first-of-type {
-            svg {
-              scale: 0.88;
-            }
-          }
-          &.checked {
-            background: #140f29;
-            svg {
-              stroke: white;
-            }
-          }
-          &:hover {
-            svg {
-              stroke: white;
-            }
-          }
-        }
-      }
-    }
-    .menu {
-      width: 245px;
-      height: calc(100% - 64px);
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      border-right: 1px solid #313131;
-      .title {
-        margin-top: 30px;
-        color: #fff;
-        font-family: Poppins;
-        font-size: 16px;
-        font-weight: 700;
-        cursor: pointer;
-
-        &:first-of-type {
-          margin-top: 50px;
-        }
-
-        &.selected {
-          color: #329af0;
-        }
-      }
-    }
-  }
 }
 
 .third-page {
