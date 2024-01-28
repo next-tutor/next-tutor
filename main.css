@@ -77,6 +77,11 @@ body {
   font-weight: 600;
   text-decoration: none;
   margin-right: 10px;
+  cursor: pointer
+}
+
+.btn-login:hover {
+  background: #ff0000;
 }
 
 .menu-button {
@@ -185,6 +190,7 @@ body {
 .home .image-container img {
   width: 610px;
 }
+
 
 
 /* -------------------------- */
@@ -321,7 +327,7 @@ body {
 }
 
 .features .icon3 {
-  width: 135px;
+  width: 120px;
 }
 
 .features .icon4 {
@@ -522,7 +528,7 @@ body {
   height: 560px;
   width: 330px;
   margin: 35px 12px;
-  background: #3f3f3f;
+  background: #333232;
   border-radius: 15px;
   border: 1px solid #656565;
 }
@@ -550,7 +556,7 @@ body {
 }
 
 .testimonials .txt {
-  color: #dedddd;
+  color: #f1eded;
   line-height: 36px;
   padding: 10px 40px;
   text-align: center;
@@ -681,9 +687,9 @@ footer .socials-links svg {
 footer .copyright {
   color: #a2a0a0;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 footer .logo img {
-  height: 20px;
+  height: 17px;
 }

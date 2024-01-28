@@ -30,10 +30,10 @@
 
 .solutions .header h1 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
-  color: #cacaca;
+  color: #dcd8d8;
   margin-top: 17px;
 }
 
@@ -61,7 +61,9 @@
 .solutions .content .item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
+  justify-content: center;
+  min-height: 430px;
 }
 
 .solutions .content .item:last-child {
@@ -69,6 +71,7 @@
 }
 
 .solutions .content .item h3 {
+  margin-top: -10px;
   color: #ffc064;
   font-size: 16px;
   font-weight: 300;
@@ -78,17 +81,45 @@
 }
 
 .solutions .content .item h2 {
-  color: white;
+  color: #f1b967;
   font-weight: 400;
   margin-top: 10px;
-  font-size: 33px;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 .solutions .content .item .txt {
   font-size: 17px;
   line-height: 38px;
   color: #c1c1c1;
-  max-width: 500px;
+  max-width: 525px;
+}
+
+.solutions .demo-link {
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cbcbcb;
+  cursor: pointer;
+  transition: all 0.35s cubic-bezier(.165, .84, .44, 1);
+  border-radius: 26px;
+  margin-top: 27px;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+
+.solutions .footer .demo-link:hover {
+  font-weight: 600;
+}
+
+/* .solutions .footer .open-link:hover img {
+  color: #fff;
+  transform: translate(9px, 1px);
+} */
+
+.solutions .open-link img {
+  margin-left: 10px;
+  margin-top: 4px;
 }
 
 .solutions .images {
@@ -101,15 +132,16 @@
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
-  /* top: 0; calc(40vh - 25%); */
   display: flex;
-  width: 410px;
-  height: 430px;
+  width: 365px;
+  height: 390px;
+  background: #7b7b7b;
+  padding: 20px;
+  border: 1px solid #af9b5c;
 }
 
 .solutions .images img {
   position: absolute;
-  width: 410px;
   opacity: 0;
   transition: opacity .8s linear;
 }
@@ -118,7 +150,6 @@
   transition: opacity .8s ease;
   opacity: 1;
 }
-
 
 .solutions .icon-wrap {
   position: absolute;
