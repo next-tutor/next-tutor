@@ -8,7 +8,8 @@
   .app {
     position: relative;
     margin-top: 40px;
-    width: 85%;
+    width: 90%;
+    max-width: 1180px;
     height: 700px;
     border: 1px solid #313131;
     border-radius: 25px;

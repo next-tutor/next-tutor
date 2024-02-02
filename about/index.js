@@ -1,20 +1,20 @@
 $(document).ready(function () {
-  $(window).scroll(function () {
-    var height = $(window).scrollTop();
-    var timelineHeight = $(".timeline").position().top;
-    const screenBottom = height + window.innerHeight;
-    const newHeight = screenBottom - timelineHeight - 200;
-    $(".timeline .line-wrapper .line").css("height", `${newHeight}px`);
-    checkDot(newHeight, 1, () => {
-      checkDot(
-        newHeight,
-        2,
-        checkDot(newHeight, 3, () =>
-          checkDot(newHeight, 4, () => checkDot(newHeight, 5, () => {}))
-        )
-      );
-    });
-  });
+  // $(window).scroll(function () {
+  //   var height = $(window).scrollTop();
+  //   var timelineHeight = $(".timeline").position().top;
+  //   const screenBottom = height + window.innerHeight;
+  //   const newHeight = screenBottom - timelineHeight - 200;
+  //   $(".timeline .line-wrapper .line").css("height", `${newHeight}px`);
+  //   checkDot(newHeight, 1, () => {
+  //     checkDot(
+  //       newHeight,
+  //       2,
+  //       checkDot(newHeight, 3, () =>
+  //         checkDot(newHeight, 4, () => checkDot(newHeight, 5, () => {}))
+  //       )
+  //     );
+  //   });
+  // });
 });
 
 function checkDot(newHeight, index, cb) {

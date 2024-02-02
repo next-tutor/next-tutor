@@ -8,28 +8,14 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 74rem;
-  margin-bottom: 140px;
-  margin-top: 180px;
   justify-content: center;
   align-items: center;
   align-self: center;
-  position: relative;
-  * {
-    animation:
-      fadeIn 1s,
-      slideIn 1.5s;
-  }
-
-  img {
-    padding-top: 80px;
-  }
-
-  .background {
-    position: absolute;
-    height: 460px;
-    width: 100%;
-    top: 0;
+  width: 100%;
+  top: 0;
+  margin-top: 190px;
+  margin-bottom: 100px;
+  .wrapper {
     background-size: 40px 40px;
     background-image: radial-gradient(
       circle at 1px 1px,
@@ -37,40 +23,54 @@ body {
       transparent 0px
     );
     background-position: center center;
-    transform: translateZ(-500px);
-    z-index: -1;
-  }
-
-  .title {
-    text-align: center;
-    text-shadow:
-      1px 1px 0px #0000001a,
-      -1px -1px 0px #ffffff33;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffffff80;
-    font-family: Poppins;
-    font-size: 72px;
-    line-height: 80px;
-    letter-spacing: -1.8px;
-    background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-    .br {
-      height: 0;
-      display: none;
+    height: 600px;
+    width: 80%;
+    max-width: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      text-align: center;
+      text-shadow:
+        1px 1px 0px #0000001a,
+        -1px -1px 0px #ffffff33;
+      -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: #ffffff80;
+      font-family: Poppins;
+      font-size: 120px;
+      font-weight: 600;
+      line-height: 190px;
+      letter-spacing: -1.8px;
+      background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation:
+        fadeIn 1s,
+        slideIn 1.5s;
+      .gradient {
+        margin-right: 30px;
+        font-weight: 700;
+        background: linear-gradient(135deg, #ffc446 0%, #ff6a07f5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+        -webkit-text-stroke-width: 0;
+      }
     }
-  }
-  .subtitle {
-    color: #eff5ffb0;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 17px;
-    width: 851px;
-    line-height: 30px;
+    .subtitle {
+      font-family: Poppins;
+      font-size: 20px;
+      color: #b5b5b5;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      animation:
+        fadeIn 1s,
+        slideIn 1.5s;
+    }
   }
 }
 
@@ -107,7 +107,7 @@ body {
   }
 
   p {
-    color: #eff5ffb0;
+    color: #c2c8d2b0;
     font-family: Poppins;
     font-size: 20px;
     font-weight: 400;
@@ -122,6 +122,55 @@ body {
     font-weight: 400;
     line-height: 27px;
     letter-spacing: 0.45px;
+  }
+}
+
+section.timeline {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    height: auto;
+    width: 200px;
+    margin-bottom: 100px;
+  }
+  .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .line-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      width: 10px;
+      .dot {
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background: #fdb039;
+        margin-bottom: 75px;
+        &:first-of-type {
+          margin-top: 30px;
+        }
+      }
+
+      &&::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 30px;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: 2px;
+        background: #222c32;
+      }
+    }
   }
 }
 

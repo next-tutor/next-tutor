@@ -7,7 +7,7 @@
   section {
     position: relative;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1050px;
     margin-bottom: 50px;
     height: 459px;
     display: flex;
@@ -37,9 +37,9 @@
         padding-top: 25px;
         color: #eff5ffb3;
         font-family: Poppins;
-        font-size: 19px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 38px;
+        line-height: 35px;
       }
     }
     img {
@@ -50,7 +50,7 @@
       img {
         margin-left: -100px;
       }
-      section span {
+      span {
         margin-left: auto;
         margin-right: -40px;
       }

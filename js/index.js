@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     var height = $(window).scrollTop();
-    console.log(height);
+
     if (height >= 1060) {
       $(".third-page .section1").addClass("visible");
       if (height >= 1550) {
