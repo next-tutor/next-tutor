@@ -32,7 +32,7 @@ a:hover {
 
 @keyframes slideIn {
   0% {
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   100% {
     transform: translateY(0px);
@@ -249,18 +249,17 @@ a:hover {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
       color: #000;
       text-align: center;
       font-family: Poppins;
       font-size: 18px;
       font-style: normal;
       font-weight: 600;
-      line-height: 24px; /* 150% */
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
+      line-height: 24px;
       &:hover {
         background-color: #f0f0f0;
-        scale: 1.02;
       }
       svg {
         margin-top: 2px;

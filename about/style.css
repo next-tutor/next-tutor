@@ -127,7 +127,6 @@ body {
 
 section.timeline {
   padding-top: 70px;
-  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,6 +138,7 @@ section.timeline {
   .wrapper {
     display: flex;
     width: 100%;
+    height: 630px;
     justify-content: center;
     .line-wrapper {
       position: relative;
@@ -171,79 +171,40 @@ section.timeline {
         background: #222c32;
       }
     }
+    .dates-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      .date {
+        font-family: Poppins;
+        transform: translateY(-9px);
+        margin-bottom: 60px;
+        &:first-of-type {
+          margin-top: 35px;
+        }
+      }
+    }
+    .contents-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      .content {
+        font-family: Poppins;
+        color: #d4d5d7;
+        font-weight: 500;
+        font-size: 17px;
+        height: 85px;
+        width: 410px;
+        &:first-of-type {
+          margin-top: 24px;
+        }
+      }
+    }
   }
 }
 
-.contact-us {
-  padding-top: 70px;
-  max-width: 760px;
-  align-self: center;
-  padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 100px;
-  margin-bottom: 150px;
-  position: relative;
-  .title {
-    text-align: center;
-    text-shadow:
-      1px 1px 0px #0000001a,
-      -1px -1px 0px #ffffff33;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffffff80;
-    font-family: Poppins;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 67.2px;
-    letter-spacing: -1.4px;
-    background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle {
-    padding-top: 30px;
-    color: #c9d3e4;
-    width: 78%;
-    font-family: Poppins;
-    font-size: 19.1px;
-    line-height: 30.8px;
-    letter-spacing: -0.18px;
-    text-align: center;
-  }
-
-  .btn {
-    margin-top: 30px;
-    border-radius: 100px;
-    border: 1px solid #e5e7eb;
-    background: #fff;
-    height: 57px;
-    width: 164px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 150% */
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    &:hover {
-      background-color: #f0f0f0;
-      scale: 1.02;
-    }
-    svg {
-      margin-top: 2px;
-      margin-right: -15px;
-    }
-  }
+.get-started .wrapper {
+  margin-top: 20px;
 }
 
 @media (max-width: 1024px) {

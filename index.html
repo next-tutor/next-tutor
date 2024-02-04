@@ -6,7 +6,7 @@
     <title>Next Tutor</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900"
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -31,9 +31,39 @@
           </div>
         </div>
         <div class="big-screen" style="display: flex; align-items: center">
-          <a href="#" class="nav-option"> Features </a>
-          <a href="/about/" class="nav-option"> About </a>
-          <a href="#" class="nav-option"> Pricing </a>
+          <div href="/features" class="nav-option" id="features">
+            Features
+            <svg
+              width="12"
+              height="6"
+              viewBox="0 0 12 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1374_11)">
+                <path
+                  d="M9.70801 0.900391L5.50801 5.10039L1.30801 0.90039"
+                  stroke="#6d6d6d"
+                  stroke-opacity="0.937"
+                  stroke-width="2.1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1374_11">
+                  <rect
+                    width="6"
+                    height="12"
+                    fill="white"
+                    transform="translate(12) rotate(90)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <a href="/about" class="nav-option"> About </a>
+          <a href="/pricing" class="nav-option"> Pricing </a>
           <img src="/assets/globe.svg" alt="globe" class="nav-option" />
           <div class="login-btn">
             <div class="title">Login</div>
@@ -58,11 +88,90 @@
       <div class="content">
         <a href="/login" class="btn login">Login</a>
         <a href="/signup" class="btn start">Get started</a>
-        <a href="/about/" class="option">Features</a>
-        <a href="/about/" class="option">About</a>
-        <a href="/about/" class="option">Pricing</a>
+        <a href="/about" class="option">Features</a>
+        <a href="/about" class="option">About</a>
+        <a href="/about" class="option">Pricing</a>
       </div>
     </nav>
+    <div class="features-menu active">
+      <div class="item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M29.7634 28.5172L22.213 20.9669C24.3661 18.4908 25.4737 15.2755 25.3024 11.9987C25.131 8.72194 23.6941 5.63968 21.2945 3.40168C18.8949 1.16368 15.7201 -0.0552175 12.4394 0.00192187C9.1586 0.0590613 6.02818 1.38778 3.70798 3.70798C1.38778 6.02818 0.0590613 9.1586 0.00192187 12.4394C-0.0552175 15.7201 1.16368 18.8949 3.40168 21.2945C5.63968 23.6941 8.72194 25.131 11.9987 25.3024C15.2755 25.4737 18.4908 24.3661 20.9669 22.213L28.5172 29.7634C28.6844 29.9191 28.9054 30.0039 29.1338 29.9999C29.3623 29.9958 29.5802 29.9033 29.7418 29.7418C29.9033 29.5802 29.9958 29.3623 29.9999 29.1338C30.0039 28.9054 29.9191 28.6844 29.7634 28.5172ZM1.80743 12.6818C1.80743 10.531 2.4452 8.4286 3.64009 6.64032C4.83498 4.85204 6.53332 3.45824 8.52035 2.63519C10.5074 1.81213 12.6939 1.59678 14.8033 2.01637C16.9127 2.43596 18.8503 3.47165 20.3711 4.99245C21.8919 6.51326 22.9276 8.45089 23.3472 10.5603C23.7668 12.6697 23.5514 14.8562 22.7284 16.8432C21.9053 18.8303 20.5115 20.5286 18.7233 21.7235C16.935 22.9184 14.8325 23.5562 12.6818 23.5562C9.7988 23.5527 7.0349 22.4058 4.99632 20.3673C2.95774 18.3287 1.81093 15.5648 1.80743 12.6818Z"
+            fill="#767676"
+          />
+        </svg>
+
+        <div class="wrap">
+          <div class="title">Tasks</div>
+          <div class="desc">World-class performance.</div>
+        </div>
+      </div>
+      <div class="item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M29.7634 28.5172L22.213 20.9669C24.3661 18.4908 25.4737 15.2755 25.3024 11.9987C25.131 8.72194 23.6941 5.63968 21.2945 3.40168C18.8949 1.16368 15.7201 -0.0552175 12.4394 0.00192187C9.1586 0.0590613 6.02818 1.38778 3.70798 3.70798C1.38778 6.02818 0.0590613 9.1586 0.00192187 12.4394C-0.0552175 15.7201 1.16368 18.8949 3.40168 21.2945C5.63968 23.6941 8.72194 25.131 11.9987 25.3024C15.2755 25.4737 18.4908 24.3661 20.9669 22.213L28.5172 29.7634C28.6844 29.9191 28.9054 30.0039 29.1338 29.9999C29.3623 29.9958 29.5802 29.9033 29.7418 29.7418C29.9033 29.5802 29.9958 29.3623 29.9999 29.1338C30.0039 28.9054 29.9191 28.6844 29.7634 28.5172ZM1.80743 12.6818C1.80743 10.531 2.4452 8.4286 3.64009 6.64032C4.83498 4.85204 6.53332 3.45824 8.52035 2.63519C10.5074 1.81213 12.6939 1.59678 14.8033 2.01637C16.9127 2.43596 18.8503 3.47165 20.3711 4.99245C21.8919 6.51326 22.9276 8.45089 23.3472 10.5603C23.7668 12.6697 23.5514 14.8562 22.7284 16.8432C21.9053 18.8303 20.5115 20.5286 18.7233 21.7235C16.935 22.9184 14.8325 23.5562 12.6818 23.5562C9.7988 23.5527 7.0349 22.4058 4.99632 20.3673C2.95774 18.3287 1.81093 15.5648 1.80743 12.6818Z"
+            fill="#767676"
+          />
+        </svg>
+
+        <div class="wrap">
+          <div class="title">Lessons</div>
+          <div class="desc">World-class performance.</div>
+        </div>
+      </div>
+      <div class="item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M29.7634 28.5172L22.213 20.9669C24.3661 18.4908 25.4737 15.2755 25.3024 11.9987C25.131 8.72194 23.6941 5.63968 21.2945 3.40168C18.8949 1.16368 15.7201 -0.0552175 12.4394 0.00192187C9.1586 0.0590613 6.02818 1.38778 3.70798 3.70798C1.38778 6.02818 0.0590613 9.1586 0.00192187 12.4394C-0.0552175 15.7201 1.16368 18.8949 3.40168 21.2945C5.63968 23.6941 8.72194 25.131 11.9987 25.3024C15.2755 25.4737 18.4908 24.3661 20.9669 22.213L28.5172 29.7634C28.6844 29.9191 28.9054 30.0039 29.1338 29.9999C29.3623 29.9958 29.5802 29.9033 29.7418 29.7418C29.9033 29.5802 29.9958 29.3623 29.9999 29.1338C30.0039 28.9054 29.9191 28.6844 29.7634 28.5172ZM1.80743 12.6818C1.80743 10.531 2.4452 8.4286 3.64009 6.64032C4.83498 4.85204 6.53332 3.45824 8.52035 2.63519C10.5074 1.81213 12.6939 1.59678 14.8033 2.01637C16.9127 2.43596 18.8503 3.47165 20.3711 4.99245C21.8919 6.51326 22.9276 8.45089 23.3472 10.5603C23.7668 12.6697 23.5514 14.8562 22.7284 16.8432C21.9053 18.8303 20.5115 20.5286 18.7233 21.7235C16.935 22.9184 14.8325 23.5562 12.6818 23.5562C9.7988 23.5527 7.0349 22.4058 4.99632 20.3673C2.95774 18.3287 1.81093 15.5648 1.80743 12.6818Z"
+            fill="#767676"
+          />
+        </svg>
+
+        <div class="wrap">
+          <div class="title">Website</div>
+          <div class="desc">World-class performance.</div>
+        </div>
+      </div>
+      <div class="item">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M29.7634 28.5172L22.213 20.9669C24.3661 18.4908 25.4737 15.2755 25.3024 11.9987C25.131 8.72194 23.6941 5.63968 21.2945 3.40168C18.8949 1.16368 15.7201 -0.0552175 12.4394 0.00192187C9.1586 0.0590613 6.02818 1.38778 3.70798 3.70798C1.38778 6.02818 0.0590613 9.1586 0.00192187 12.4394C-0.0552175 15.7201 1.16368 18.8949 3.40168 21.2945C5.63968 23.6941 8.72194 25.131 11.9987 25.3024C15.2755 25.4737 18.4908 24.3661 20.9669 22.213L28.5172 29.7634C28.6844 29.9191 28.9054 30.0039 29.1338 29.9999C29.3623 29.9958 29.5802 29.9033 29.7418 29.7418C29.9033 29.5802 29.9958 29.3623 29.9999 29.1338C30.0039 28.9054 29.9191 28.6844 29.7634 28.5172ZM1.80743 12.6818C1.80743 10.531 2.4452 8.4286 3.64009 6.64032C4.83498 4.85204 6.53332 3.45824 8.52035 2.63519C10.5074 1.81213 12.6939 1.59678 14.8033 2.01637C16.9127 2.43596 18.8503 3.47165 20.3711 4.99245C21.8919 6.51326 22.9276 8.45089 23.3472 10.5603C23.7668 12.6697 23.5514 14.8562 22.7284 16.8432C21.9053 18.8303 20.5115 20.5286 18.7233 21.7235C16.935 22.9184 14.8325 23.5562 12.6818 23.5562C9.7988 23.5527 7.0349 22.4058 4.99632 20.3673C2.95774 18.3287 1.81093 15.5648 1.80743 12.6818Z"
+            fill="#767676"
+          />
+        </svg>
+
+        <div class="wrap">
+          <div class="title">Paybook</div>
+          <div class="desc">World-class performance.</div>
+        </div>
+      </div>
+    </div>
+
     <section class="homePage">
       <div class="title">
         The <strong class="gradient">ultimate</strong> platform for private
@@ -459,7 +568,7 @@
     </section>
     <section class="get-started">
       <div class="wrapper">
-        <img src="./assets/logo-large.png" alt="logo" />
+        <img src="/assets/logo-large.png" alt="logo" />
         <div class="title">Ready to start?</div>
         <div class="btn">
           Get Started
@@ -674,13 +783,17 @@
         <div class="title">Resources</div>
         <a href="/legal/AUP">Pricing</a>
         <a href="/legal/terms-of-service">Features</a>
-        <a href="/about/">About</a>
+        <a href="/about">About</a>
       </div>
       <div class="list">
         <div class="title">Legal</div>
         <a href="/legal/acceptable-use">Acceptable Use</a>
         <a href="/legal/privacy-policy">Privacy Policy</a>
         <a href="/legal/terms-of-service">Terms of Service</a>
+      </div>
+      <div class="list">
+        <div class="title">Support</div>
+        <a href="/contact">Contact us</a>
       </div>
       <div class="get-app-wrapper">
         <a href="" class="btn" style="margin-top: 0">
@@ -737,6 +850,27 @@
           <a href="/legal/acceptable-use">Acceptable Use</a>
           <a href="/legal/privacy-policy">Privacy Policy</a>
           <a href="/legal/terms-of-service">Terms of Service</a>
+        </div>
+      </div>
+      <div class="btn-wrapper last">
+        <div class="header">
+          <div class="title">Support</div>
+          <svg
+            width="15"
+            height="10"
+            viewBox="0 0 10 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1.59814L5.08941 5.68764L9.17904 1.59814"
+              stroke="white"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <div class="content">
+          <a href="/contact">Contact us</a>
         </div>
       </div>
       <div class="bottom">

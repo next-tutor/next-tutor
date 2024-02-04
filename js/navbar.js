@@ -25,4 +25,20 @@ $(document).ready(() => {
       }
     });
   }
+  $(".features-menu").css(
+    "left",
+    $("#features.nav-option").offset().left + "px"
+  );
+
+  $(".features-menu").hover(
+    () => {},
+    function () {
+      // $(this).removeClass("active");
+      // $("#features.nav-option").removeClass("active");
+    }
+  );
+  $("#features.nav-option").click(function () {
+    $(".features-menu").toggleClass("active");
+    $(this).toggleClass("active");
+  });
 });

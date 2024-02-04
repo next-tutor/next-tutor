@@ -114,7 +114,9 @@ footer2 {
     transition: 0.3s ease-in-out height;
     width: 75%;
     box-sizing: border-box;
-
+    &.last.active {
+      height: 100px;
+    }
     &.active {
       height: 200px;
       .header svg {
@@ -189,7 +191,7 @@ footer2 {
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1153px) {
   footer1 {
     .get-app-wrapper {
       margin-left: 76px;
@@ -200,7 +202,7 @@ footer2 {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 870px) {
   footer1 {
     display: none;
     svg {
