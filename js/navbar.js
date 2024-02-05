@@ -33,8 +33,8 @@ $(document).ready(() => {
   $(".features-menu").hover(
     () => {},
     function () {
-      // $(this).removeClass("active");
-      // $("#features.nav-option").removeClass("active");
+      $(this).removeClass("active");
+      $("#features.nav-option").removeClass("active");
     }
   );
   $("#features.nav-option").click(function () {
