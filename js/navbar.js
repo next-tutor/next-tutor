@@ -3,6 +3,7 @@ $(document).ready(() => {
     $(this).toggleClass("active");
     $(".hamburger-language-btn").toggleClass("active");
     $("nav").toggleClass("open");
+    // $("nav .content").toggle(200, "linear");
   });
 
   if (
@@ -40,5 +41,10 @@ $(document).ready(() => {
   $("#features.nav-option").click(function () {
     $(".features-menu").toggleClass("active");
     $(this).toggleClass("active");
+  });
+
+  $(".option.first").click(function () {
+    $(this).toggleClass("active");
+    $(".features-options").slideToggle(200);
   });
 });

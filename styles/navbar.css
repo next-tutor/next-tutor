@@ -8,7 +8,7 @@ nav {
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease-in-out;
-  height: 84px;
+  min-height: 85px;
   overflow: hidden;
   &::before {
     content: "";
@@ -30,6 +30,7 @@ nav {
   &.scrolled {
     top: 0;
     &::before {
+      border-width: 0;
       background-color: #0000009d;
       max-width: 100%;
       width: 100%;
@@ -39,10 +40,16 @@ nav {
     }
   }
   &.open {
-    height: 600px;
-    padding-bottom: 15px;
-    background: #07070b;
+    border-bottom: 1.5px solid #191a27;
+    padding-bottom: 10px;
+
+    &::before {
+      height: 100%;
+      backdrop-filter: blur(0);
+      background: black;
+    }
     .content {
+      max-height: 1000px;
       opacity: 1;
     }
   }
@@ -170,13 +177,17 @@ nav {
 
   .content {
     padding-top: 20px;
-    width: 100%;
+    width: 100% !important;
     flex-direction: column;
     flex: 1;
-    transition: 0.5s ease-in-out;
     opacity: 0;
+    transition:
+      opacity 0.3s ease-in-out,
+      max-height 0.2s ease-in-out;
+    max-height: 0;
     padding-left: 10%;
     padding-right: 10%;
+    overflow: hidden;
     box-sizing: border-box;
     .btn {
       border-radius: 0.375rem;
@@ -212,6 +223,7 @@ nav {
     }
     .option {
       width: 100%;
+      cursor: pointer;
       border-bottom: 1px solid #d4e4fe1a;
       color: #eff5ffb1;
       font-size: 16px;
@@ -222,7 +234,12 @@ nav {
       align-items: center;
       text-decoration: none;
       padding-left: 5px;
-
+      svg {
+        transform: rotate(90deg);
+        margin-left: 10px;
+        margin-top: 3px;
+        transition: rotate 0.2s ease-in-out;
+      }
       &.first {
         height: 38px;
         border-width: 0;
@@ -230,8 +247,11 @@ nav {
       &:last-of-type {
         border-bottom-width: 0;
       }
-    }
 
+      &.active svg {
+        rotate: 180deg;
+      }
+    }
     .sub-option {
       width: 100%;
       height: 37px;
@@ -259,6 +279,7 @@ nav.scrolled ~ .features-menu {
 }
 
 .features-menu {
+  visibility: hidden;
   position: fixed;
   height: auto;
   z-index: 1000;
@@ -277,6 +298,7 @@ nav.scrolled ~ .features-menu {
   padding: 5px;
   padding-block: 7px;
   &.active {
+    visibility: visible;
     opacity: 1;
   }
 
@@ -289,6 +311,9 @@ nav.scrolled ~ .features-menu {
     align-items: center;
     svg {
       padding-left: 15px;
+      height: 24px;
+      width: 24px;
+      margin-top: -6px;
     }
     .wrap {
       margin-left: 17px;
@@ -315,7 +340,6 @@ nav.scrolled ~ .features-menu {
 
 @media (max-width: 425px) {
   nav {
-    width: 96%;
     .header a img {
       scale: 0.8;
       margin-left: -15px;
@@ -335,5 +359,8 @@ nav.scrolled ~ .features-menu {
     .big-screen {
       display: none !important;
     }
+  }
+  .features-menu {
+    display: none;
   }
 }
