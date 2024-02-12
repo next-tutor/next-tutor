@@ -26,10 +26,11 @@ $(document).ready(() => {
       }
     });
   }
-  // $(".features-menu").css(
-  //   "left",
-  //   $("#features.nav-option").offset().left + "px"
-  // );
+
+  $(".features-menu").css(
+    "left",
+    $("#features.nav-option").offset().left + "px"
+  );
 
   $(".features-menu").hover(
     () => { },

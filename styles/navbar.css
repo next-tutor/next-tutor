@@ -313,11 +313,11 @@ nav.scrolled~.features-menu {
   position: fixed;
   height: auto;
   z-index: 1000;
-  top: 90px;
+  top: 110px;
   margin-left: -40px;
   width: 280px;
   opacity: 0;
-  background-color: #111111;
+  background-color: #efefef;
   border-radius: 20px;
   box-shadow:
     #0000001a 0px 0px 0px 1px,
@@ -356,9 +356,10 @@ nav.scrolled~.features-menu {
       justify-content: space-evenly;
 
       .title {
-        color: white;
+        color: #000;
         font-family: Poppins;
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 600;
       }
 
       .desc {
