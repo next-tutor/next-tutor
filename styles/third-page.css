@@ -1,9 +1,19 @@
 .third-page {
   width: 100%;
-  padding-block: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .main-title {
+    padding-bottom: 100px;
+    font-family: Poppins;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 67.2px;
+    letter-spacing: -1.4px;
+    color: #a8a8a8;
+  }
+
   section {
     position: relative;
     width: 90%;
@@ -15,16 +25,19 @@
     transition: 0.3s ease-in-out;
     opacity: 0;
     transform: translateY(40px);
+
     span {
       display: flex;
       align-items: start;
       flex-direction: column;
       width: 470px;
+
       .title {
         font-family: Poppins;
         font-size: 34px;
         font-weight: 400;
         letter-spacing: -1px;
+
         .gradient {
           font-weight: 400;
           background: linear-gradient(135deg, #ffe7e4 0%, #ff6a07f5 100%);
@@ -33,6 +46,7 @@
           -webkit-text-fill-color: transparent;
         }
       }
+
       .subtitle {
         padding-top: 25px;
         color: #eff5ffb3;
@@ -42,6 +56,7 @@
         line-height: 35px;
       }
     }
+
     img {
       scale: 0.8;
     }
@@ -50,11 +65,13 @@
       img {
         margin-left: -100px;
       }
+
       span {
         margin-left: auto;
         margin-right: -40px;
       }
     }
+
     &:first-of-type,
     &:last-of-type {
       img {
@@ -71,6 +88,7 @@
     width: 100% !important;
     align-items: center;
   }
+
   .third-page section span .subtitle {
     font-size: 3.2vw !important;
     width: 90%;
@@ -83,10 +101,12 @@
     section {
       width: 100%;
     }
+
     img {
       width: 133% !important;
       scale: 1 !important;
     }
+
     .section2 img {
       margin-left: -15px !important;
     }
@@ -121,16 +141,19 @@
   .third-page section {
     flex-direction: column-reverse !important;
     height: auto !important;
+
     img {
       top: 0;
       left: 0;
       position: static !important;
       margin-top: -90px;
     }
+
     span {
       align-items: center;
       margin: 0 !important;
       margin-top: -70px !important;
+
       .subtitle {
         text-align: center !important;
       }
@@ -139,9 +162,11 @@
     &:first-of-type {
       margin-top: -100px;
     }
+
     &:nth-of-type(2) {
       flex-direction: column !important;
     }
+
     &:last-of-type {
       img {
         margin-top: -110px;

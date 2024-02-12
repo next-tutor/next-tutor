@@ -15,40 +15,38 @@ body {
   top: 0;
   margin-top: 190px;
   margin-bottom: 100px;
+
   .wrapper {
     background-size: 40px 40px;
-    background-image: radial-gradient(
-      circle at 1px 1px,
-      rgb(103, 103, 103) 1px,
-      transparent 0px
-    );
+    background-image: radial-gradient(circle at 1px 1px,
+        rgb(103, 103, 103) 1px,
+        transparent 0px);
     background-position: center center;
     height: 600px;
     width: 80%;
     max-width: 1150px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+
     .title {
+
       text-align: center;
-      text-shadow:
-        1px 1px 0px #0000001a,
-        -1px -1px 0px #ffffff33;
+      text-shadow: 1px 1px 0px #0000001a, -1px -1px 0px #ffffff33;
       -webkit-text-stroke-width: 0.5px;
       -webkit-text-stroke-color: #ffffff80;
       font-family: Poppins;
-      font-size: 120px;
+      font-size: 95px;
       font-weight: 600;
+      margin-top: 85px;
       line-height: 190px;
       letter-spacing: -1.8px;
       background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation:
-        fadeIn 1s,
-        slideIn 1.5s;
+      animation: fadeIn 1s, slideIn 1.5s;
+
       .gradient {
         margin-right: 30px;
         font-weight: 700;
@@ -60,12 +58,14 @@ body {
         -webkit-text-stroke-width: 0;
       }
     }
+
     .subtitle {
       font-family: Poppins;
       font-size: 20px;
       color: #b5b5b5;
       width: 80%;
-      max-width: 700px;
+      max-width: 720px;
+      line-height: 35px;
       text-align: center;
       animation:
         fadeIn 1s,
@@ -84,6 +84,8 @@ body {
 
   img {
     margin-left: -35px;
+    border-radius: 30px;
+
     &.visible {
       transform: translateY(0);
     }
@@ -96,6 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .title {
     color: #fcfdfff0;
     text-align: center;
@@ -107,14 +110,15 @@ body {
   }
 
   p {
-    color: #c2c8d2b0;
+    color: #a5a5a5;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 35px;
     letter-spacing: 0.45px;
-    width: 822px;
+    width: 815px;
   }
+
   strong {
     color: #fcfdfff0;
     font-family: Poppins;
@@ -130,16 +134,19 @@ section.timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   img {
     height: auto;
     width: 200px;
     margin-bottom: 100px;
   }
+
   .wrapper {
     display: flex;
     width: 100%;
-    height: 630px;
+    height: 565px;
     justify-content: center;
+
     .line-wrapper {
       position: relative;
       display: flex;
@@ -147,14 +154,16 @@ section.timeline {
       justify-content: center;
       height: auto;
       width: 10px;
+
       .dot {
         height: 10px;
         width: 10px;
         border-radius: 50%;
         background: #fdb039;
         margin-bottom: 75px;
+
         &:first-of-type {
-          margin-top: 30px;
+          margin-top: 15px;
         }
       }
 
@@ -162,7 +171,7 @@ section.timeline {
         content: "";
         display: block;
         position: absolute;
-        top: 30px;
+        top: 0;
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
@@ -171,23 +180,29 @@ section.timeline {
         background: #222c32;
       }
     }
+
     .dates-wrapper {
       display: flex;
       flex-direction: column;
       margin-right: 20px;
+
       .date {
         font-family: Poppins;
-        transform: translateY(-9px);
-        margin-bottom: 60px;
+        font-size: 20px;
+        transform: translateY(-11px);
+        margin-bottom: 55px;
+
         &:first-of-type {
           margin-top: 35px;
         }
       }
     }
+
     .contents-wrapper {
       display: flex;
       flex-direction: column;
       margin-left: 20px;
+
       .content {
         font-family: Poppins;
         color: #d4d5d7;
@@ -195,6 +210,7 @@ section.timeline {
         font-size: 17px;
         height: 85px;
         width: 410px;
+
         &:first-of-type {
           margin-top: 24px;
         }
@@ -212,15 +228,18 @@ section.timeline {
     .background {
       display: none;
     }
+
     img {
       scale: 0.8;
     }
+
     .title {
       width: 80%;
       font-size: 100px;
       line-height: 100px;
       padding-top: 0px;
     }
+
     .subtitle {
       width: 87%;
     }
@@ -233,6 +252,7 @@ section.timeline {
       font-size: 86px;
       line-height: 80px;
     }
+
     .subtitle {
       font-size: 16px;
       line-height: 25px;
@@ -256,6 +276,7 @@ section.timeline {
       .br {
         display: flex;
       }
+
       font-size: 80px;
       line-height: 80px;
       margin-top: -15px;
