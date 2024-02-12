@@ -74,16 +74,14 @@ a:hover {
   }
 
   .title {
-    padding-top: 34px;
+    padding-top: 20px;
     font-family: Poppins;
-    font-size: 50px;
+    font-size: 44px;
     font-weight: 400;
     line-height: 67.2px;
     letter-spacing: -1.4px;
-    background: linear-gradient(135deg, #ffffffb3 30%, #ffffff40 100%);
+    color: #dcdbdb;
     background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .items {
@@ -256,7 +254,7 @@ a:hover {
       margin-top: 70px;
       border-radius: 100px;
       height: 57px;
-      width: 300px;
+      width: 250px;
       display: flex;
       align-items: center;
       justify-content: center;
