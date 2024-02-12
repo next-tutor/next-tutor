@@ -150,9 +150,10 @@
               width: 280px;
               border-radius: 12px;
               box-sizing: border-box;
-              border: 2px solid #141414;
+              border: 2px solid #292929;
               padding-left: 35px;
               margin-right: 25px;
+              background: #0c0c0c;
 
               .box-title {
                 padding-top: 25px;
@@ -161,7 +162,7 @@
                 font-size: 18px;
                 line-height: 25px;
                 letter-spacing: -0.06em;
-                color: #ffffff8a;
+                color: #ffffffe6;
               }
 
               .box-item {
