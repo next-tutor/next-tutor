@@ -214,7 +214,7 @@ a:hover {
   justify-content: center;
 
   .wrapper {
-    opacity: 0;
+    /* opacity: 0; */
     transform: translateY(20px);
     transition: 0.3s ease-in-out;
     margin-top: 100px;

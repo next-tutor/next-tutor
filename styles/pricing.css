@@ -1,47 +1,57 @@
-@import "/styles/style.css";
-
 body {
   background-color: black;
 }
 
 .pricing {
-  margin-top: 200px;
+  margin-top: 215px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .title {
     text-align: center;
     font-family: Poppins;
-    font-size: 66px;
-    background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 75px;
+    color: #fff;
+
+    .gradient {
+      margin-right: 30px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #ffc446 0%, #ff6a07f5 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: none;
+      -webkit-text-stroke-width: 0;
+    }
   }
+
   .subtitle {
-    color: #eff5ffb0;
+    color: #d2d2d2;
     text-align: center;
     font-family: Poppins;
-    font-size: 19px;
-    margin-top: 1px;
+    font-size: 50px;
   }
+
   .wrapper {
     display: flex;
-    margin-top: 110px;
+    margin-top: 140px;
     animation:
       slideIn 0.5s ease-in-out,
       fadeIn 0.5s ease-in-out;
+
     .card {
       width: 376px;
       height: 595px;
       border-radius: 16px;
-      border: 1px solid #d4e4fe30;
+      border: 1px solid #d9d9d9f5;
       margin-right: 20px;
       align-items: center;
       display: flex;
       flex-direction: column;
       position: relative;
+
       &::before {
         z-index: 0;
         content: "";
@@ -51,12 +61,10 @@ body {
         bottom: -1px;
         left: -1px;
         right: -1px;
-        background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0) 0%,
-          #000 100%,
-          #000 100%
-        );
+        background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0) 0%,
+            #000 100%,
+            #000 100%);
       }
 
       .heading {
@@ -84,10 +92,12 @@ body {
         background-color: #d4e4fe30;
         width: 85%;
         height: 1px;
+
         &.first {
           margin-top: 35px;
         }
       }
+
       .description {
         height: 80px;
         position: relative;
@@ -99,6 +109,7 @@ body {
         font-family: Poppins;
         flex-direction: column;
         font-size: 15px;
+
         .small {
           margin-top: 10px;
           color: #eff5ffb0;
@@ -117,10 +128,16 @@ body {
         font-weight: 300;
         display: flex;
         align-items: center;
-        width: 85%;
+        width: 70%;
+
+        img {
+          margin-right: 10px;
+        }
+
         &.first {
           margin-top: 20px;
         }
+
         svg {
           margin-right: 10px;
         }
@@ -145,6 +162,7 @@ body {
         font-weight: 600;
         cursor: pointer;
         transition: background-color 0.3s ease-in-out;
+
         &:hover {
           background-color: #e9e8e9;
         }
@@ -159,6 +177,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h1.title {
     text-align: center;
     font-family: Poppins;
@@ -168,6 +187,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .item {
     width: 750px;
     min-height: 60px;
@@ -183,22 +203,27 @@ body {
     overflow: hidden;
     transition: height 0.3s ease-in-out;
     position: relative;
+
     &.first {
       margin-top: 30px;
     }
+
     &.active {
       svg {
         transform: rotateZ(90deg);
       }
+
       .content {
         opacity: 1;
       }
     }
+
     .header {
       min-height: 60px;
       max-height: 60px;
       display: flex;
       align-items: center;
+
       .title {
         font-family: Poppins;
         font-size: 18px;
@@ -210,6 +235,7 @@ body {
         transition: 0.3s ease-in-out transform;
       }
     }
+
     .content {
       color: #eff5ffb1;
       margin-left: 20px;

@@ -13,15 +13,15 @@
     slideIn 1.5s;
 
   .title {
-    padding-top: 85px;
+    padding-top: 35px;
     color: #fff;
     text-align: center;
     font-family: Poppins;
-    font-size: 80px;
+    font-size: 82px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.3;
-    width: 993px;
+    width: 995px;
 
     .gradient {
       font-weight: 700;
