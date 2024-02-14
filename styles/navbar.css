@@ -21,7 +21,7 @@ nav {
     position: absolute;
     z-index: -1;
     border-radius: 32px;
-    background: #1b1b1bcc;
+    /* background: #1b1b1bcc; */
     backdrop-filter: blur(10px);
     /* border: 1px solid #ffffff4f; */
     max-width: 1140px;

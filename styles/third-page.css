@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
+  padding-top: 130px;
 
   .main-title {
     padding-bottom: 100px;
@@ -34,7 +36,7 @@
 
       .title {
         font-family: Poppins;
-        font-size: 34px;
+        font-size: 33px;
         font-weight: 400;
         letter-spacing: -1px;
 
@@ -49,7 +51,7 @@
 
       .subtitle {
         padding-top: 25px;
-        color: #eff5ffb3;
+        color: #1a1a1a;
         font-family: Poppins;
         font-size: 16px;
         font-weight: 400;

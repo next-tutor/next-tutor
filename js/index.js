@@ -17,13 +17,13 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var height = $(window).scrollTop();
 
-    if (height >= 1060) {
+    if (height >= 60) {
       $(".third-page .section1").addClass("visible");
-      if (height >= 1550) {
+      if (height >= 1100) {
         $(".third-page .section2").addClass("visible");
-        if (height >= 2050) {
+        if (height >= 1750) {
           $(".third-page .section3").addClass("visible");
-          if (height >= 3500) {
+          if (height >= 2500) {
             $(".get-started .wrapper").addClass("visible");
           }
         }
