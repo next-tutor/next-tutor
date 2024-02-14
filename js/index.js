@@ -21,9 +21,9 @@ $(document).ready(function () {
       $(".third-page .section1").addClass("visible");
       if (height >= 1100) {
         $(".third-page .section2").addClass("visible");
-        if (height >= 1750) {
+        if (height >= 1350) {
           $(".third-page .section3").addClass("visible");
-          if (height >= 2500) {
+          if (height >= 1600) {
             $(".get-started .wrapper").addClass("visible");
           }
         }

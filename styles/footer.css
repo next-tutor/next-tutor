@@ -3,10 +3,10 @@ footer1 {
   position: relative;
   box-sizing: border-box;
   width: 100%;
-  height: 517px;
   border-top: 1px solid #c7d6fe21;
   background: #000;
-  padding-top: 125px;
+  padding-top: 105px;
+  padding-bottom: 40px;
 
   .line {
     position: absolute;

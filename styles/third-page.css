@@ -5,6 +5,7 @@
   align-items: center;
   background: white;
   padding-top: 130px;
+  padding-bottom: 100px;
 
   .main-title {
     padding-bottom: 100px;
@@ -20,7 +21,7 @@
     position: relative;
     width: 90%;
     max-width: 1050px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     height: 459px;
     display: flex;
     align-items: center;
@@ -39,14 +40,7 @@
         font-size: 33px;
         font-weight: 400;
         letter-spacing: -1px;
-
-        .gradient {
-          font-weight: 400;
-          background: linear-gradient(135deg, #ffe7e4 0%, #ff6a07f5 100%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
+        color: #ff6a07;
       }
 
       .subtitle {
@@ -85,7 +79,7 @@
 
     &:last-of-type {
       img {
-        top: -155px;
+        top: -15px;
       }
     }
   }
