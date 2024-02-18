@@ -51,6 +51,15 @@ a:hover {
   }
 }
 
+.gradient {
+  font-weight: 700;
+  color: wheat;
+  background: linear-gradient(135deg, #ffc446 0%, #ff6a07f5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
