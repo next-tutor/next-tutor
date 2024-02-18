@@ -86,6 +86,8 @@ body {
     margin-left: -35px;
     border-radius: 30px;
     max-width: 685px;
+    border: 1px solid #c3c1c1;
+    padding: 4px;
 
     &.visible {
       transform: translateY(0);

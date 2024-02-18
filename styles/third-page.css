@@ -26,8 +26,8 @@
     display: flex;
     align-items: center;
     transition: 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 1;
+    /* transform: translateY(40px); */
 
     span {
       display: flex;
@@ -68,19 +68,18 @@
       }
     }
 
-    &:first-of-type,
-    &:last-of-type {
-      img {
-        position: absolute;
-        right: -100px;
-        top: -122px;
-      }
+    .img-why1 {
+      position: absolute;
+      width: 630px;
+      top: -85px;
+      right: -100px;
     }
 
-    &:last-of-type {
-      img {
-        top: -15px;
-      }
+    .img-why3 {
+      position: absolute;
+      width: 458px;
+      top: -10px;
+      right: -50px;
     }
   }
 }

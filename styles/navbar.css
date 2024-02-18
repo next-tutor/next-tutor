@@ -21,9 +21,7 @@ nav {
     position: absolute;
     z-index: -1;
     border-radius: 32px;
-    /* background: #1b1b1bcc; */
     backdrop-filter: blur(10px);
-    /* border: 1px solid #ffffff4f; */
     max-width: 1140px;
     min-height: 80px;
   }
@@ -33,7 +31,7 @@ nav {
 
     &::before {
       border-width: 0;
-      background-color: #0000009d;
+      background-color: #000;
       max-width: 100%;
       width: 100%;
       border-radius: 0;
@@ -304,7 +302,7 @@ nav {
   }
 }
 
-nav.scrolled~.features-menu {
+/* nav.scrolled~.features-menu {
   top: 65px;
 }
 
@@ -371,7 +369,7 @@ nav.scrolled~.features-menu {
       background-color: rgba(136, 136, 136, 0.08);
     }
   }
-}
+} */
 
 @media (max-width: 425px) {
   nav {
