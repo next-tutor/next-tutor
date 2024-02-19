@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #1a1a1a;
+  background: #111111;
   padding-top: 130px;
   padding-bottom: 100px;
 
@@ -41,11 +41,15 @@
         font-weight: 400;
         letter-spacing: -1px;
         color: #d1d1d1;
+
+        .gradient {
+          font-weight: 500;
+        }
       }
 
       .subtitle {
         padding-top: 25px;
-        color: #e6e6e6;
+        color: #e3e3e3;
         font-family: Poppins;
         font-size: 16px;
         font-weight: 400;
@@ -70,9 +74,9 @@
 
     .img-why1 {
       position: absolute;
-      width: 584px;
-      top: -75px;
-      right: -65px;
+      width: 605px;
+      top: -100px;
+      right: -55px;
     }
 
     .img-why2 {

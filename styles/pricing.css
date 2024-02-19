@@ -17,13 +17,6 @@ body {
 
     .gradient {
       margin-right: 30px;
-      font-weight: 700;
-      background: linear-gradient(135deg, #ffc446 0%, #ff6a07f5 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: none;
-      -webkit-text-stroke-width: 0;
     }
   }
 
@@ -172,16 +165,19 @@ body {
 }
 
 .faq {
-  margin-top: 175px;
+  margin-top: 75px;
+  padding: 85px 0 120px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #111111;
 
   h1.title {
     text-align: center;
     font-family: Poppins;
     font-size: 40px;
+    padding-bottom: 20px;
     background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -192,7 +188,7 @@ body {
     width: 750px;
     min-height: 60px;
     height: auto;
-    background: #040408;
+    background: #111111;
     border: 0.5px solid #2c2e37;
     border-radius: 11px;
     margin-top: 20px;
