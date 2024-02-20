@@ -34,7 +34,7 @@
       width: 376px;
       height: 595px;
       border-radius: 16px;
-      border: 1px solid #383838;
+      border: 1px solid #585555;
       margin-right: 20px;
       align-items: center;
       display: flex;
@@ -167,14 +167,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #000;
+  background-color: #131313;
 
   h1.title {
     text-align: center;
     font-family: Poppins;
     font-size: 40px;
+    font-weight: 600;
     padding-bottom: 20px;
-    background: linear-gradient(135deg, #fff 30%, #ffffff80 100%);
+    background: linear-gradient(135deg, #fff 30%, #ffffffa8 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,7 +185,7 @@
     width: 750px;
     min-height: 60px;
     height: auto;
-    border: 0.5px solid #2c2e37;
+    border: 0.5px solid #555555;
     border-radius: 11px;
     margin-top: 20px;
     flex-direction: column;
@@ -218,7 +219,7 @@
       .title {
         font-family: Poppins;
         font-size: 18px;
-        color: #9d9a9a;
+        color: #c4c0c0;
         margin-left: 15px;
       }
 
@@ -228,7 +229,7 @@
     }
 
     .content {
-      color: #9d9a9a;
+      color: #c4c0c0;
       margin-left: 20px;
       margin-right: 40px;
       margin-bottom: 20px;
