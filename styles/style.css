@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #010101;
+  background-color: #060606;
   height: 100%;
   width: 100%;
   display: flex;
@@ -71,7 +71,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: black;
+  background: #000;
 
   .subtitle {
     padding-top: 47px;
