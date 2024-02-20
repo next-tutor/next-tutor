@@ -34,7 +34,7 @@
       width: 376px;
       height: 595px;
       border-radius: 16px;
-      border: 1px solid #d9d9d9f5;
+      border: 1px solid #7d7d7df5;
       margin-right: 20px;
       align-items: center;
       display: flex;
@@ -52,7 +52,7 @@
         right: -1px;
         background: linear-gradient(180deg,
             rgba(0, 0, 0, 0) 0%,
-            #000 100%,
+            #060606 100%,
             #000 100%);
       }
 
@@ -184,7 +184,6 @@
     width: 750px;
     min-height: 60px;
     height: auto;
-    background: #111111;
     border: 0.5px solid #2c2e37;
     border-radius: 11px;
     margin-top: 20px;
@@ -219,7 +218,7 @@
       .title {
         font-family: Poppins;
         font-size: 18px;
-        color: #adadad;
+        color: #9d9a9a;
         margin-left: 15px;
       }
 
@@ -229,7 +228,7 @@
     }
 
     .content {
-      color: #eff5ffb1;
+      color: #9d9a9a;
       margin-left: 20px;
       margin-right: 40px;
       margin-bottom: 20px;
