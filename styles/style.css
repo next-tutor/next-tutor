@@ -52,7 +52,6 @@ a:hover {
 }
 
 .gradient {
-  font-weight: 700;
   color: wheat;
   background: linear-gradient(135deg, #ffc446 0%, #ff781ff5 100%);
   background-clip: text;
@@ -63,6 +62,16 @@ a:hover {
 .visible {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
+
+  img {
+    width: 1000px;
+  }
 }
 
 .recommendations {
@@ -276,7 +285,7 @@ a:hover {
       font-style: normal;
       font-weight: 600;
       line-height: 24px;
-      background: linear-gradient(135deg, #ffc446 0%, #e18345f5 100%);
+      background: #f1a403;
 
       &:hover {
         background-color: #da952f;

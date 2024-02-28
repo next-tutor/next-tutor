@@ -9,41 +9,184 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./tt.css" />
   <link rel="stylesheet" href="./styles/about.css" />
 </head>
 
 <body>
-  <nav>
-    <div class="header">
+  <header class="main-header">
+    <div class="inner-header">
       <a href="./index.html">
-        <img src="./images/logo-large.png" alt="logo" />
+        <img src="./images/logo-large.png" alt="logo" class="logo" />
       </a>
-      <div style="display: flex">
-        <img src="./assets/globe.svg" alt="globe" class="hamburger-language-btn" />
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+      <nav class="navbar navbar--dark-text" role="menubar">
+        <div class="nav-buttons-container">
+          <div class="navbar-btn  navbar__mode--dark-text" role="menuitem" tabindex="0" aria-label="platform">
+            Platform<span class="icon"><svg width="16px" height="16px" viewBox="0 0 16 16">
+                <g id="arrow-down-16" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <polygon id="Icon"
+                    transform="translate(8.000000, 8.500000) rotate(-90.000000) translate(-8.000000, -8.500000) "
+                    points="11.5 3.90176105 10.1581397 2.5 4.5 8.5 10.1581397 14.5 11.5 13.0982389 7.18372051 8.5">
+                  </polygon>
+                </g>
+              </svg></span>
+            <div class="nav-submenu nav-submenu--features">
+
+              <div class="wrap">
+                <div class="inner-wrap">
+                  <div class="right">
+                    <div class="inner-box">
+                      <div class="title"><span class="bold">All-in-one </span>Platform</div>
+                      <div class="desc">Everything you need to run your tutoring business in one place.</div>
+                    </div>
+                  </div>
+                  <div class="left">
+                    <a class="nav-submenu-item" data-item-link="/all-in-one-business-platform" tabindex="-1"
+                      target="_self" role="menuitem" href="/all-in-one-business-platform">
+                      <div class="nav-submenu-item__icon-container">
+                        <div class="media-element svg-content"><svg width="24px" height="24px" viewBox="0 0 24 24"
+                            version="1.1">
+                            <title>rocket</title>
+                            <g id="rocket-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <path
+                                d="M13.8994546,17.3113628 L14.6183149,15.9232721 C13.5279279,16.4883229 12.4345786,16.981921 11.7912977,17.2417927 L11.4301706,19.2902362 L14.3690616,17.5545615 L13.8994546,17.3113628 Z M6.84381345,19.8675375 L8.21932133,21.3194252 L5.95875198,23.4610721 L4.58324411,22.0091844 L6.84381345,19.8675375 Z M4.58465694,18.1269291 L5.97731815,19.5623715 L1.96732865,23.4528494 L0.574667442,22.0174071 L4.58465694,18.1269291 Z M21.9540324,1.00775977 L22.8150187,1.03333189 L22.9172732,1.88860699 C23.2998432,5.08849213 22.3554507,8.25277173 20.122815,11.3455189 C19.2758726,12.5187416 18.2903367,13.5202329 17.1887012,14.3704405 C16.6479051,14.78781 15.8868524,15.2444573 15.0884891,15.6748518 L15.9174925,16.1041736 C16.7060907,16.5125705 17.0143048,17.4829268 16.6059078,18.2715251 C16.4670958,18.5395656 16.2556407,18.7631223 15.9957319,18.9166213 L11.7139868,21.4453699 C10.9493131,21.8969773 9.96332236,21.6431869 9.51171498,20.8785131 C9.31670337,20.5483142 9.24612017,20.1592922 9.31269937,19.7816309 L10.017316,15.7847908 L10.4284302,15.5526269 C10.6345491,15.4362277 12.1114621,14.9137311 12.5911466,14.7147347 C13.803262,14.2118905 14.9172066,13.5971464 15.9667568,12.7871365 C16.9200129,12.0514433 17.7702408,11.1874507 18.501204,10.1748876 C20.239455,7.76698421 21.0620288,5.38593708 20.9962406,3.00640083 C18.0661135,3.09279544 15.5525966,4.05252801 13.4179868,5.89172002 C10.5587386,8.35526455 9.29296996,10.9002734 8.83312258,13.4435602 L8.71691696,14.0862608 L8.08171454,14.2382006 C6.96954855,14.5042296 5.64927552,14.744296 4.1189431,14.9594721 C3.239458,15.0832387 2.42621973,14.4705312 2.30255838,13.5910517 C2.25322621,13.2402013 2.3211482,12.8828802 2.49577212,12.5746009 L4.82851273,8.45640453 C5.26621592,7.68368781 6.24745513,7.41210568 7.02017185,7.84980887 C7.3544717,8.03917206 7.60992054,8.34197448 7.74026946,8.70339386 L7.9668243,9.33156411 L6.28848141,9.93687249 L4.63127317,12.8624909 C5.50411938,12.7278095 6.29353538,12.5845461 6.99901302,12.4329682 C7.62692227,9.69091804 9.10977122,6.96373013 12.1125102,4.37655303 C14.8472718,2.02026679 18.1445413,0.894614201 21.9540324,1.00775977 Z M2.84381345,15.8675375 L4.21932133,17.3194252 L1.95875198,19.4610721 L0.58324411,18.0091844 L2.84381345,15.8675375 Z M14.5,8 C15.3284271,8 16,8.67157288 16,9.5 C16,10.3284271 15.3284271,11 14.5,11 C13.6715729,11 13,10.3284271 13,9.5 C13,8.67157288 13.6715729,8 14.5,8 Z"
+                                id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="nav-submenu-item__text-container">
+                        <div class="nav-submenu-item__text-container__title">All-in-one platform</div>
+                        <div class="nav-submenu-item__text-container__description">Everything you need to run your
+                          business in one place.</div>
+                      </div>
+                    </a>
+
+                    <a class="nav-submenu-item" data-item-link="/features" tabindex="-1" target="_self" role="menuitem"
+                      href="/features">
+                      <div class="nav-submenu-item__icon-container">
+                        <div class="media-element svg-content"><svg width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2 2H11V11H2V2ZM4 4H9V9H4V4ZM2 13H11V22H2V13ZM4 15H9V20H4V15ZM22 2H13V11H22V2ZM20 4H15V9H20V4ZM13 13H22V22H13V13ZM15 15H20V20H15V15Z"
+                              fill="black"></path>
+                          </svg></div>
+                      </div>
+                      <div class="nav-submenu-item__text-container">
+                        <div class="nav-submenu-item__text-container__title">Features overview</div>
+                        <div class="nav-submenu-item__text-container__description">Powerful features built for small
+                          businesses.</div>
+                      </div>
+                    </a>
+
+                    <a class="nav-submenu-item" data-item-link="/online-contract" tabindex="-1" target="_self"
+                      role="menuitem" href="/online-contract">
+                      <div class="nav-submenu-item__icon-container">
+                        <div class="media-element svg-content"><svg width="24px" height="24px" viewBox="0 0 24 24"
+                            version="1.1">
+                            <title>contract</title>
+                            <g id="contract-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <path
+                                d="M22,1 L22,23 L2,23 L2,1 L22,1 Z M20,3 L4,3 L4,21 L20,21 L20,3 Z M18,17 L18,19 L6,19 L6,17 L18,17 Z M7,12 L10,15 L7,15 L7,12 Z M14.3284271,5.55025253 L16.4497475,7.67157288 L10.6715729,13.4497475 L8.55025253,11.3284271 L14.3284271,5.55025253 Z"
+                                id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="nav-submenu-item__text-container">
+                        <div class="nav-submenu-item__text-container__title">Online contracts</div>
+                        <div class="nav-submenu-item__text-container__description">Customizable contracts that look
+                          professional.</div>
+                      </div>
+                    </a>
+
+                    <a class="nav-submenu-item" data-item-link="/online-invoices" tabindex="-1" target="_self"
+                      role="menuitem" href="/online-invoices">
+                      <div class="nav-submenu-item__icon-container">
+                        <div class="media-element svg-content"><svg width="24px" height="24px" viewBox="0 0 24 24"
+                            version="1.1">
+                            <title>invoice</title>
+                            <g id="invoice-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <path
+                                d="M22,1 L22,24 L19.5,23 L17,24 L14.5,23 L12,24 L9.5,23 L7,24 L4.5,23 L2,24 L2,1 L22,1 Z M20,3 L4,3 L4,21.0459341 L4.5,20.8459341 L7,21.8459341 L9.5,20.8459341 L12,21.8459341 L14.5,20.8459341 L17,21.8459341 L19.5,20.8459341 L20,21.0459341 L20,3 Z M13,5 L13.0011208,7.0714916 C14.0961528,7.23291032 15.0272745,7.6657025 15.7676951,8.34978229 L14.6206897,9.88824383 C13.8366606,9.16255443 12.7912886,8.8287373 11.8039927,8.8287373 C10.9328494,8.8287373 10.4392015,9.20609579 10.4392015,9.78664731 C10.4392015,11.3105951 16,10.2801161 16,13.8940493 C16,15.4523527 15.010436,16.6734272 13.0016192,16.9439251 L13,19 L11,19 L10.9994291,16.9184105 C9.70094994,16.7212005 8.72002507,16.1813023 8,15.4615385 L9.13248639,13.850508 C9.81488203,14.5616836 10.8747731,15.1712627 12.2105263,15.1712627 C13.3575318,15.1712627 13.8947368,14.6632801 13.8947368,14.0972424 C13.8947368,12.413643 8.31941924,13.5892598 8.31941924,9.94629898 C8.31941924,8.58470972 9.31504091,7.42009909 10.9994997,7.09209987 L11,5 L13,5 Z"
+                                id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="nav-submenu-item__text-container">
+                        <div class="nav-submenu-item__text-container__title">Online invoices</div>
+                        <div class="nav-submenu-item__text-container__description">Professional invoices that get you
+                          paid
+                          fast.</div>
+                      </div>
+                    </a>
+
+                    <a class="nav-submenu-item" data-item-link="/online-payment-software" tabindex="-1" target="_self"
+                      role="menuitem" href="/online-payment-software">
+                      <div class="nav-submenu-item__icon-container">
+                        <div class="media-element svg-content"><svg width="24px" height="24px" viewBox="0 0 24 24"
+                            version="1.1">
+                            <title>dollar</title>
+                            <g id="dollar-circle-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <path
+                                d="M12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 Z M12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 Z M12,5 C12.5522847,5 13,5.44771525 13,6 L13.0007464,7.03897909 C14.0488188,7.14921352 15.0829235,7.48863726 15.8277017,7.99815157 L15.8277017,7.99815157 L15.023879,9.56931608 C14.1243632,9.03327172 12.9951837,8.70055453 12.0956679,8.70055453 C11.2344293,8.70055453 10.6028543,8.97781885 10.6028543,9.68022181 C10.6028543,11.4916821 16.019088,10.5120148 16,14.0794824 C16,15.7911907 14.6600285,16.7024107 13.0011616,16.9378223 L13,18 C13,18.5522847 12.5522847,19 12,19 C11.4477153,19 11,18.5522847 11,18 L11.0004815,16.915989 C9.86501081,16.7425268 8.76795469,16.3038896 8,15.6321627 L8,15.6321627 L8.78468403,14.116451 C9.66506124,14.8743068 11.0813202,15.336414 12.191361,15.336414 C13.1291542,15.336414 13.8564223,15.0221811 13.8564223,14.2828096 C13.8564223,12.2680222 8.49760451,13.3955638 8.51674314,9.84658041 C8.51674314,8.29659624 9.60127011,7.43748148 10.9999321,7.1308078 L11,6 C11,5.44771525 11.4477153,5 12,5 Z"
+                                id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="nav-submenu-item__text-container">
+                        <div class="nav-submenu-item__text-container__title">Online payments</div>
+                        <div class="nav-submenu-item__text-container__description">Make it easy for clients to pay you
+                          with online payments.</div>
+                      </div>
+                    </a>
+
+                    <a class="nav-submenu-item" data-item-link="/proposal-software" tabindex="-1" target="_self"
+                      role="menuitem" href="/proposal-software">
+                      <div class="nav-submenu-item__icon-container">
+                        <div class="media-element svg-content"><svg width="24px" height="24px" viewBox="0 0 24 24"
+                            version="1.1">
+                            <title>proposal</title>
+                            <g id="proposal-24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <path
+                                d="M18,0 L18,1 L22,1 L22,23 L2,23 L2,1 L10,1 L10,0 L18,0 Z M10,3 L4,3 L4,21 L20,21 L20,3 L18,3 L18,11 L14,9 L10,11 L10,3 Z M14,17 L14,19 L6,19 L6,17 L14,17 Z M16,13 L16,15 L6,15 L6,13 L16,13 Z M16,2 L12,2 L12,7.76393202 L14,6.76393202 L16,7.76393202 L16,2 Z"
+                                id="Combined-Shape" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                          </svg></div>
+                      </div>
+                      <div class="nav-submenu-item__text-container">
+                        <div class="nav-submenu-item__text-container__title">Online proposals</div>
+                        <div class="nav-submenu-item__text-container__description">Easily book clients by combining an
+                          invoice.</div>
+                      </div>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <a class="navbar-btn  navbar__mode--dark-text" data-item-link="./pricing" tabindex="0" target="_self"
+            role="menuitem" href="./about.html">about</a><a class="navbar-btn  navbar__mode--dark-text"
+            data-item-link="/templates" tabindex="0" target="_self" role="menuitem" href="./pricing.html">Pricing</a>
         </div>
-      </div>
-      <div class="big-screen" style="display: flex; align-items: center">
-        <a href="./platform.html" class="nav-option"> Platform </a>
-        <a href="./about.html" class="nav-option"> About </a>
-        <a href="./pricing.html" class="nav-option"> Pricing </a>
-        <img src="./images/globe.svg" alt="globe" class="nav-option" />
-        <div class="login-btn">
-          <div class="title">Login</div>
+        <a href="https://www.honeybook.com/app/login" class="navbar-btn btn-login navbar__mode--dark-text"
+          data-item-link="https://www.honeybook.com/app/login" tabindex="0" target="_self" role="menuitem">Login</a>
+
+
+        <div class="mobile-menu-buttons-wrapper">
+          <section class="registration-form__container registration-form__container--column ">
+            <div class="registration-form__form-container"><button
+                class="hbui-button hbui-button--small hbui-button--primary--dark  " type="submit"
+                data-testid="start-trial--button">Start free trial</button></div>
+          </section><button class="hbui-button hbui-button--large hbui-button--invisible  drawer-button"
+            aria-label="menuitem" role="menuitem"><span class="icon-container nx-hamburger-16-container"><i
+                class="icon icon-hb-nx-hamburger-16"></i></span></button>
         </div>
-      </div>
+      </nav>
     </div>
-    <div class="content">
-      <a href="/login" class="btn login">Login</a>
-      <a href="/signup" class="btn start">Get started</a>
-      <a href="/about" class="option">Features</a>
-      <a href="/about" class="option">About</a>
-      <a href="/about" class="option">Pricing</a>
-    </div>
-  </nav>
+  </header>
   <section class="about">
     <div class="wrapper">
       <div class="title">
