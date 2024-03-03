@@ -37,7 +37,7 @@
  }
 
  .nav-submenu-item:hover .nav-submenu-item__text-container__title {
-   color: #131416
+   color: #131416;
  }
 
  .nav-submenu-item>* {
@@ -79,7 +79,8 @@
    color: #131416;
    font-size: 13px;
    font-weight: 700;
-   margin-bottom: 10px
+   margin-bottom: 10px;
+   display: inline
  }
 
  @media screen and (max-width:767px) {
@@ -92,6 +93,7 @@
    color: #767b84;
    font-size: 14px;
    line-height: 1.4;
+   margin-top: 7px;
  }
 
  .nav-submenu {
@@ -239,6 +241,11 @@
    border-right: 1px solid #c5c5c5;
  }
 
+ .navbar-btn .nav-submenu .inner-wrap .right .inner-box img {
+   width: 150px;
+   margin-bottom: 20px;
+ }
+
  .navbar-btn .nav-submenu .inner-wrap .right .title {
    font-weight: 600;
    font-size: 17px;
@@ -247,9 +254,8 @@
  }
 
 
- .navbar-btn .nav-submenu .inner-wrap .right .title .bold {
-   color: #ffae00;
-   margin-right: 5px;
+ .navbar-btn .nav-submenu .bold {
+   background: #ffae00;
  }
 
  .navbar-btn .nav-submenu .inner-wrap .right .desc {
