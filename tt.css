@@ -136,6 +136,14 @@
    /* position: relative; */
    text-decoration: none;
    text-transform: uppercase;
+
+   &.selected {
+     color: #ffc446;
+
+     .icon polygon {
+       fill: #ffc446;
+     }
+   }
  }
 
  .navbar-btn:hover {

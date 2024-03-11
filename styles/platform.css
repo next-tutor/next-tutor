@@ -101,9 +101,8 @@
         } */
 
         &.active {
-          cursor: pointer;
-
           .title {
+            cursor: pointer;
             background: linear-gradient(135deg, #ffc446 0%, #ff781ff5 100%);
             background-clip: text;
             -webkit-background-clip: text;
@@ -111,13 +110,8 @@
           }
 
           .text {
+            cursor: pointer;
             color: #f6f6f6;
-          }
-
-          &:hover {
-            .title {
-              border-bottom: 1px solid gray;
-            }
           }
         }
       }

@@ -70,8 +70,15 @@ a:hover {
   margin-bottom: 130px;
 
   img {
-    width: 1050px;
+    width: 1070px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 0 42.6723px 122.09px #dcdcdc0a, 0 27.658px 71.5019px #0000004a, 0 16.4367px 38.888px #00000006, 0 8.53446px 19.8397px #00000005, 0 3.477px 9.94809px #ffffff9c, 0 0.790228px 4.80448px #00000036;
   }
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: 30px !important;
 }
 
 .recommendations {
