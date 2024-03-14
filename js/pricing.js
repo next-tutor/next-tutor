@@ -1,13 +1,13 @@
-$(document).ready(function () {
-  $(window).scroll(() => {
-    var height = $(window).scrollTop();
-    if (height >= 1300) {
-      $(".get-started .wrapper").addClass("visible");
-    }
-  });
+// $(document).ready(function () {
+//   $(window).scroll(() => {
+//     var height = $(window).scrollTop();
+//     if (height >= 1300) {
+//       $(".get-started .wrapper").addClass("visible");
+//     }
+//   });
 
-  $(".item").click(function () {
-    $(this).siblings().removeClass("active").children(".content").slideUp();
-    $(this).toggleClass("active").children(".content").slideToggle();
-  });
-});
+//   $(".item").click(function () {
+//     $(this).siblings().removeClass("active").children(".content").slideUp();
+//     $(this).toggleClass("active").children(".content").slideToggle();
+//   });
+// });

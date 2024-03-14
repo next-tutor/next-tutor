@@ -569,7 +569,7 @@
 
  .navbar .nav-buttons-container {
    display: flex;
-   justify-content: flex-end;
+   flex: 1;
    /* width: 100%; */
  }
 
@@ -586,9 +586,9 @@
  }
 
  .navbar .btn-login {
-   background: #fffefe;
+   background: linear-gradient(38deg, #e8dfdf 0%, #f8922d 100%);
    height: 32px;
-   border-radius: 18px;
+   border-radius: 8px;
    color: #000;
    padding: 4px 20px;
    margin-left: 25px;

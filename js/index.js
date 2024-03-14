@@ -1,35 +1,42 @@
 var responsiveMode = 0;
 
 $(document).ready(function () {
-  $(".responsive-menu div").click(() => {
-    debugger;
-    if (responsiveMode == 0) {
-      responsiveMode = 1;
-      $(".responsive-menu .item1").removeClass("checked");
-      $(".responsive-menu .item2").addClass("checked");
-    } else {
-      responsiveMode = 0;
-      $(".responsive-menu .item2").removeClass("checked");
-      $(".responsive-menu .item1").addClass("checked");
-    }
-  });
+  // $(".responsive-menu div").click(() => {
+  //   debugger;
+  //   if (responsiveMode == 0) {
+  //     responsiveMode = 1;
+  //     $(".responsive-menu .item1").removeClass("checked");
+  //     $(".responsive-menu .item2").addClass("checked");
+  //   } else {
+  //     responsiveMode = 0;
+  //     $(".responsive-menu .item2").removeClass("checked");
+  //     $(".responsive-menu .item1").addClass("checked");
+  //   }
+  // });
 
-  $(window).scroll(function () {
-    var height = $(window).scrollTop();
+  // if ($(window).scrollTop() > 50) {
+  //   $('.main-header').addClass('small');
+  // } else {
+  //   $('.main-header').removeClass('small');
+  // }
 
-    if (height >= 60) {
-      $(".third-page .section1").addClass("visible");
-      if (height >= 1100) {
-        $(".third-page .section2").addClass("visible");
-        if (height >= 1350) {
-          $(".third-page .section3").addClass("visible");
-          if (height >= 1600) {
-            $(".get-started .wrapper").addClass("visible");
-          }
-        }
-      }
-    }
-  });
+
+  // $(window).scroll(function () {
+  //   var height = $(window).scrollTop();
+
+  //   // if (height > 10) {
+  //   //   $(".main-header").toggleClass("small");
+  //   //   // $(".third-page .section1").addClass("visible");
+  //   //   // if (height >= 1100) {
+  //   //   //   $(".third-page .section2").addClass("visible");
+  //   //   //   if (height >= 1350) {
+  //   //   //     $(".third-page .section3").addClass("visible");
+  //   //   //     if (height >= 1600) {
+  //   //   //       $(".get-started .wrapper").addClass("visible");
+  //   //   //     }
+  //   //   //   }
+  //   // }
+  // });
 
   // $(".second-page .slider .btns .btn.1").click(() => {
   //   if ($(".slider .item.first").hasClass("active")) {
@@ -75,14 +82,14 @@ $(document).ready(function () {
   //   $(this).removeClass("right").addClass("active");
   // });
 
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    loop: true,
-    margin: 10,
-    // autoplay: true,
-    // autoplayTimeout: 5000,
-    // autoplayHoverPause: true,
-    items: 1
-  });
+  // var owl = $('.owl-carousel');
+  // owl.owlCarousel({
+  //   loop: true,
+  //   margin: 10,
+  //   // autoplay: true,
+  //   // autoplayTimeout: 5000,
+  //   // autoplayHoverPause: true,
+  //   items: 1
+  // });
 });
 
