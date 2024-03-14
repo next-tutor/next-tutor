@@ -585,7 +585,7 @@
    }
  }
 
- .navbar .btn-login {
+ .navbar .btn-start {
    background: linear-gradient(38deg, #e8dfdf 0%, #f8922d 100%);
    height: 32px;
    border-radius: 8px;
@@ -593,6 +593,13 @@
    padding: 4px 20px;
    margin-left: 25px;
    font-weight: 600;
+   text-decoration: none;
+   text-transform: unset;
+   font-size: 14px;
+
+   &:hover {
+     background: linear-gradient(38deg, #ffffff 0%, #f8922d 100%);
+   }
  }
 
  .navbar.fixed {

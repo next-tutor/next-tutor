@@ -1,6 +1,8 @@
 var responsiveMode = 0;
 
 $(document).ready(function () {
+  $(this).scrollTop(0);
+
   // $(".responsive-menu div").click(() => {
   //   debugger;
   //   if (responsiveMode == 0) {
