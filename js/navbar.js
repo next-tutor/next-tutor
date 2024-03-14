@@ -1,4 +1,23 @@
-// $(document).ready(() => {
+
+
+
+$(document).ready(() => {
+  $(".navbar-btn-platform").click(function () {
+    $(".navbar-btn-platform").addClass("show");
+  });
+
+  $(".nav-submenu").click((event) => {
+    event.stopPropagation();
+    $(".navbar-btn-platform").removeClass("show");
+  })
+
+  $("header").mouseleave(function () {
+    $(".navbar-btn-platform").removeClass("show");
+  });
+});
+
+
+
 //   $(".hamburger").click(function () {
 //     $(this).toggleClass("active");
 //     $(".hamburger-language-btn").toggleClass("active");

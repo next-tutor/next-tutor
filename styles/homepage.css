@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-position: 70% 0;
+  background-position: 80% 0;
   animation:
     fadeIn 1.5s,
     slideIn 1.5s;
